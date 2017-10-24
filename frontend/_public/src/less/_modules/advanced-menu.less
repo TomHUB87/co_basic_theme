@@ -1,0 +1,33 @@
+.advanced-menu {
+
+  .button-container {
+    background: @webv-black;
+    color: @webv-white;
+  }
+}
+
+.navigation-main {
+
+  .navigation--list {
+
+    .navigation--entry {
+      &.is--hovered {
+
+        .navigation--link {
+          background: @webv-black;
+          color: @webv-white;
+        }
+      }
+      &.is--home {
+        &.is--active {
+          background: @webv-dark-orange;
+          color: @webv-white;
+        }
+        &:hover {
+          background: @webv-black;
+          color: @webv-white;
+        }
+      }
+    }
+  }
+}

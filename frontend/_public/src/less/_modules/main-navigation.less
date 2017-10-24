@@ -1,0 +1,25 @@
+.navigation-main {
+  background: @webv-dark-orange;
+  border-bottom: none;
+  border-top: 2px solid @webv-dark-orange;
+}
+
+@media screen and (min-width: @tabletViewportWidth) {
+
+  .navigation-main {
+
+    .navigation--link {
+      color: @webv-white;
+
+    }
+
+    .is--active {
+
+       .navigation--link {
+         color: @webv-black;
+         background-color: @webv-white;
+         background-image: none;
+       }
+     }
+  }
+}

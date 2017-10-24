@@ -1,0 +1,25 @@
+.header-main {
+
+  .top-bar {
+    background: @webv-dark-gray;
+  }
+
+  .top-bar--navigation {
+
+    .navigation--entry,
+    .navigation--link {
+      color: @webv-light-gray;
+      &.entry--service {
+        font-weight: bold;
+
+        .service--list {
+          font-weight: normal;
+        }
+      }
+      &:hover {
+        color: @webv-dark-orange;
+      }
+    }
+  }
+}
+
