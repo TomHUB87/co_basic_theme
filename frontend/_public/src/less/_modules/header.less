@@ -23,3 +23,31 @@
   }
 }
 
+.shop--navigation {
+
+  .navigation--entry {
+
+    .btn {
+      color: @webv-light-gray;
+      &:hover {
+        color: @webv-dark-orange;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: @tabletLandscapeViewportWidth) {
+
+  .navigation--list {
+
+    .entry--cart {
+
+      .cart--link {
+
+        .cart--amount {
+          color: @webv-dark-orange;
+        }
+      }
+    }
+  }
+}
