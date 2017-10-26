@@ -1,8 +1,13 @@
 .select-field,
 .js--fancy-select {
 
+  &:after {
+    color: @webv-dark-orange;
+  }
+
   select {
     color: @webv-black;
+    border-color: @webv-light-gray-2;
 
     &:hover {
       color: @webv-dark-orange;
@@ -28,6 +33,12 @@
   }
 
   label {
+    color: @webv-dark-gray-2;
+  }
+}
+
+label {
+  &.sort--label {
     color: @webv-dark-gray-2;
   }
 }

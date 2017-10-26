@@ -36,6 +36,42 @@
   }
 }
 
+@media screen and (min-width: @tabletViewportWidth) {
+
+  .header-main {
+
+    .top-bar--navigation {
+
+      .entry--service {
+        &:after,
+        &::after {
+          color: @webv-dark-orange;
+        }
+      }
+    }
+
+    .logo-main {
+      .unitize(top, -35);
+      width: 50%;
+      position: absolute;
+
+      .logo--shop {
+
+        .logo--link {
+          .unitize(height, 195);
+        }
+      }
+    }
+  }
+
+  .shop--navigation {
+    .unitize(margin-top, 30);
+    .unitize(margin-bottom, 30);
+    margin-left: 50%;
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: @tabletLandscapeViewportWidth) {
 
   .navigation--list {
@@ -50,4 +86,33 @@
       }
     }
   }
+
+  .header-main {
+
+    .logo-main {
+      width: 45%;
+    }
+
+    .shop--navigation {
+      width: 55%;
+      margin-left: 45%;
+    }
+  }
+}
+
+@media screen and (min-width: @desktopViewportWidth) {
+  .header-main {
+
+    .logo-main {
+      .unitize(top, -44);
+
+      .logo--shop {
+
+        .logo--link {
+          .unitize(height, 210);
+        }
+      }
+    }
+  }
+
 }

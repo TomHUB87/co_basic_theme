@@ -1,7 +1,11 @@
 .navigation-main {
-  background: @webv-dark-orange;
+  .unitize(margin-top, 33);
+  background: transparent;
   border-bottom: none;
-  border-top: 2px solid @webv-dark-orange;
+
+  .container {
+    background: @webv-dark-orange;
+  }
 }
 
 @media screen and (min-width: @tabletViewportWidth) {

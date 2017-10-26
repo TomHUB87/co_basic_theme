@@ -1,6 +1,7 @@
 .product--box {
 
   .product--title {
+    color: @webv-dark-gray-2;
     &:hover {
       color: @webv-dark-orange;
     }
@@ -11,6 +12,47 @@
 
       .price--default {
         color: @webv-black;
+      }
+    }
+
+    .price--default {
+      color: @webv-dark-gray-2;
+    }
+  }
+
+  .product--description {
+    color: @webv-gray-4;
+  }
+}
+
+.box--slider {
+
+  .product--title {
+    color: @webv-black;
+    font-weight: bold;
+
+    .similar--content &,
+    .bought--content &,
+    .viewed--content & {
+      color: @webv-gray-2;
+      &:hover {
+        color: @webv-dark-orange;
+      }
+
+
+    }
+  }
+
+  .product--price-info {
+    .topseller--content & {
+      display: none;
+    }
+    .similar--content &,
+    .bought--content &,
+    .viewed--content & {
+
+      .price--unit {
+        display: none;
       }
     }
   }
