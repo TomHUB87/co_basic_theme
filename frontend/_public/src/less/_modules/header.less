@@ -1,5 +1,16 @@
 .header-main {
 
+  .logo-main {
+
+    .logo--link {
+      .unitize-height(70);
+    }
+
+    .logo--shop {
+        .unitize-height(70);
+    }
+  }
+
   .top-bar {
     background: @webv-dark-gray;
   }
@@ -54,11 +65,19 @@
       .unitize(top, -35);
       width: 50%;
       position: absolute;
+      .is--ctl-checkout &,
+      .is--ctl-register.is--target-checkout & {
+        position: initial;
+      }
 
       .logo--shop {
 
         .logo--link {
-          .unitize(height, 195);
+          .unitize-height(195);
+          .is--ctl-checkout &,
+          .is--ctl-register.is--target-checkout & {
+            .unitize-height(70);
+          }
         }
       }
     }
