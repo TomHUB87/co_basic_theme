@@ -65,7 +65,8 @@
       .unitize(top, -35);
       width: 50%;
       position: absolute;
-      .is--ctl-checkout &,
+      .is--ctl-checkout.is--act-confirm &,
+      .is--ctl-checkout.is--act-finish &,
       .is--ctl-register.is--target-checkout & {
         position: initial;
       }
@@ -74,7 +75,8 @@
 
         .logo--link {
           .unitize-height(195);
-          .is--ctl-checkout &,
+          .is--ctl-checkout.is--act-confirm &,
+          .is--ctl-checkout.is--act-finish &,
           .is--ctl-register.is--target-checkout & {
             .unitize-height(70);
           }
